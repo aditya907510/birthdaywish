@@ -1,0 +1,274 @@
+
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+  <meta charset="UTF-8">
+  <title>लाडक्या बहिणीला वाढदिवसाच्या हार्दिक शुभेच्छा</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(-45deg, #1a1a40, #0f2027, #2c5364, #000000);
+      background-size: 400% 400%;
+      animation: gradientBG 15s ease infinite;
+      font-family: 'Segoe UI', sans-serif;
+      color: #fff;
+      text-align: center;
+      overflow-x: hidden;
+    }
+
+    @keyframes gradientBG {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .slideshow {
+      position: relative;
+      width: 80%;
+      max-width: 600px;
+      margin: 40px auto;
+      border-radius: 20px;
+      overflow: hidden;
+      animation: glowBox 2s infinite alternate;
+    }
+
+    @keyframes glowBox {
+      0% {
+        box-shadow: 0 0 10px #ff4081, 0 0 20px #ff80ab;
+      }
+      100% {
+        box-shadow: 0 0 20px #ff80ab, 0 0 30px #ff4081;
+      }
+    }
+
+    .slides img {
+      width: 100%;
+      height: auto;
+      position: absolute;
+      opacity: 0;
+      transition: opacity 1s ease-in-out, transform 1.5s ease;
+      border: 5px solid #ff80ab;
+      border-radius: 20px;
+      box-shadow:
+        0 0 10px #ff80ab,
+        0 0 20px #ff80ab,
+        0 0 30px #ff4081,
+        0 0 40px #ff4081;
+      animation: neonGlow 2s infinite alternate;
+    }
+
+    .slides img.active {
+      opacity: 1;
+      position: relative;
+      z-index: 2;
+      transform: scale(1.05);
+    }
+
+    @keyframes neonGlow {
+      0% {
+        box-shadow:
+          0 0 5px #ff80ab,
+          0 0 10px #ff4081,
+          0 0 15px #ff4081;
+      }
+      100% {
+        box-shadow:
+          0 0 20px #ff80ab,
+          0 0 30px #ff4081,
+          0 0 40px #ff4081,
+          0 0 50px #ff4081;
+      }
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 30px;
+      border-radius: 20px;
+      margin: 20px auto;
+      max-width: 600px;
+      animation: fadeIn 2s;
+    }
+
+    h1 {
+      color: #ffc107;
+      font-size: 3rem;
+      animation: glowText 2s infinite;
+    }
+
+    @keyframes glowText {
+      0% { text-shadow: 0 0 5px #ffc107; }
+      50% { text-shadow: 0 0 20px #ff4081; }
+      100% { text-shadow: 0 0 5px #ffc107; }
+    }
+
+    p {
+      font-size: 1.3rem;
+      margin-top: 20px;
+    }
+
+    button {
+      padding: 10px 25px;
+      font-size: 1.1rem;
+      background: linear-gradient(to right, #ff4081, #ff80ab);
+      color: white;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      box-shadow: 0 4px 12px rgba(255, 64, 129, 0.4);
+      transition: transform 0.3s, box-shadow 0.3s;
+      margin-top: 20px;
+    }
+
+    button:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 20px rgba(255, 64, 129, 0.6);
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+
+    .heart {
+      position: absolute;
+      color: pink;
+      font-size: 20px;
+      animation: floatUp 5s linear infinite, fadeHeart 1s ease-in-out forwards;
+    }
+
+    @keyframes floatUp {
+      0% { transform: translateY(0); }
+      100% { transform: translateY(-100vh); }
+    }
+
+    @keyframes fadeHeart {
+      from { opacity: 0; }
+      to { opacity: 0.6; }
+    }
+
+    canvas {
+      position: fixed;
+      top: 0;
+      left: 0;
+      pointer-events: none;
+      z-index: 9999;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <h1>Happy Birthday,मई! 🎉🎉🎉</h1>
+    <p>
+      देव पूर्ण जगाची काळजी घेऊऊ शकत नाही, म्हणून त्याने प्रत्येक घरात आई दिली असावी ...
+      त्याचप्रमाणे आई आपल्या जीवनाच्या प्रत्येक भागाची काळजी घेऊ शकत नाही,
+      म्हणून तिने आपल्याला बहीण दिली असावी ...
+    </p>
+    <button onclick="startSlideshow()">please click</button>
+  </div>
+
+  <div class="slideshow">
+    <div class="slides">
+      <img src="sis.jpg" alt="Photo 1">
+      <img src="sis2.jpg" alt="Photo 2">
+      <img src="sis3.jpg" alt="Photo 3">
+      <img src="sis4.jpg" alt="photo 4">
+      <img src="sis5.jpg" alt="photo 5">
+      <img src="sis6.jpg" alt="photo 6">
+      <img src="sis7.jpg" alt="photo 7">
+      <img src="sis8.jpg" alt="photo 8">
+      <img src="sis9.jpg" alt="photo 9">
+      <img src="sis10.jpg" alt="photo 10">
+      <img src="sis11.jpg" alt="photo 11">
+      <img src="sis12.jpg" alt="photo 12">
+      <img src="sis13.jpg" alt="photo 13">
+      <img src="sis14.jpg" alt="photo 14">
+    </div>
+  </div>
+
+  <audio id="bgMusic" src="new.mp3.mp3" loop></audio>
+  <canvas id="confettiCanvas"></canvas>
+
+  <script>
+    let index = 0;
+    let images;
+
+    function startSlideshow() {
+      images = document.querySelectorAll(".slides img");
+      images[index].classList.add("active");
+      document.getElementById("bgMusic").play();
+      startConfetti();
+      startHearts();
+
+      setInterval(() => {
+        images[index].classList.remove("active");
+        index = (index + 1) % images.length;
+        images[index].classList.add("active");
+      }, 3000);
+    }
+
+    // Confetti
+    const canvas = document.getElementById("confettiCanvas");
+    const ctx = canvas.getContext("2d");
+    let confetti = [];
+
+    function resizeCanvas() {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+    }
+    window.addEventListener("resize", resizeCanvas);
+    resizeCanvas();
+
+    function createConfettiPiece() {
+      return {
+        x: Math.random() * canvas.width,
+        y: -20,
+        r: Math.random() * 6 + 4,
+        d: Math.random() * 10 + 5,
+        color: `hsl(${Math.random() * 360}, 100%, 50%)`,
+        tilt: Math.random() * 10 - 10,
+        tiltAngle: 0,
+        tiltAngleIncrement: Math.random() * 0.07 + 0.05
+      };
+    }
+
+    function drawConfetti() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      confetti.forEach((c, i) => {
+        c.tiltAngle += c.tiltAngleIncrement;
+        c.y += (Math.cos(c.d) + 3 + c.r / 2) / 2;
+        c.x += Math.sin(c.tiltAngle);
+        ctx.beginPath();
+        ctx.lineWidth = c.r;
+        ctx.strokeStyle = c.color;
+        ctx.moveTo(c.x + c.tilt + c.r / 2, c.y);
+        ctx.lineTo(c.x + c.tilt, c.y + c.tilt + c.r / 2);
+        ctx.stroke();
+
+        if (c.y > canvas.height) confetti[i] = createConfettiPiece();
+      });
+    }
+
+    function startConfetti() {
+      for (let i = 0; i < 100; i++) confetti.push(createConfettiPiece());
+      setInterval(drawConfetti, 30);
+    }
+
+    function startHearts() {
+      const emojis = ["🎂", "🎉", "🎈", "🎁", "🥳"];
+      setInterval(() => {
+        const heart = document.createElement("div");
+        heart.classList.add("heart");
+        heart.innerText = emojis[Math.floor(Math.random() * emojis.length)];
+        heart.style.left = Math.random() * 100 + "vw";
+        heart.style.top = "100vh";
+        heart.style.fontSize = Math.random() * 20 + 20 + "px";
+        document.body.appendChild(heart);
+        setTimeout(() => heart.remove(), 5000);
+      }, 500);
+    }
+  </script>
+
+</body>
+</html>
